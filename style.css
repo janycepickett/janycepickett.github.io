@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+     box-sizing: border-box;
+     /* border:dashed;   */
+    }
+
+body {
+  background-image: url("assets/test_background.png");
+    font-family: 'Dongle', sans-serif;
+}
+/* the main container */
+
+.card{
+ width:70%;
+ height:100%;
+  margin: 3em auto;
+  overflow: hidden;
+  box-shadow: 2px 5px 15px 0px #17161694;
+  background-color:rgb(255, 255, 255);
+  border-radius: 25px;
+}
+
+.front-card{
+
+  background-color: papayawhip;
+}
+ 
+.back-card {
+  background-image: url('assets/front-of-card-with-bigger-logo.svg');
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+h1{
+  /* to left align text */
+  font-size: 3em;
+  margin-top: 47%;
+  margin-left:20%;
+  color:hotpink;
+
+}
+
+.back-text {
+  margin-top: 50%;
+  margin-left:20%;
+}
+
+h3{
+  font-size: 4em;
+}
+h4{
+  font-size:1.7em;
+}
+
+h5{
+  font-size: 1em;
+  color:indigo;
+}
+
+
+.icon-container{
+  /* controls the width of the overall container */
+  width:30%;
+  margin-left:5%;
+  /* what enables the use of css grid */
+  display:grid;
+  gap:10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+svg{
+  fill:rgb(204, 153, 51);
+  /* width:100%; */
+  /* height:auto; */
+  /* margin: 0 auto */
+}
+
+svg:hover{
+  fill:rgb(255, 204, 51);
+  animation: tada; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
